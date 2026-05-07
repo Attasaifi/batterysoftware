@@ -22,6 +22,10 @@ function Sidebar() {
         </li>
 
         <li>
+          <Link to="/purchase">Purchase</Link>
+        </li>
+
+        <li>
           <Link to="/stock">Stock</Link>
         </li>
 
@@ -45,6 +49,10 @@ function Sales() {
   return <h1>Sales Page</h1>;
 }
 
+function Purchase() {
+  return <h1>Purchase Page</h1>;
+}
+
 function Stock() {
   return <h1>Stock Page</h1>;
 }
@@ -64,6 +72,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/sales" element={<Sales />} />
+            <Route path="/purchase" element={<Purchase />} />
             <Route path="/stock" element={<Stock />} />
             <Route path="/reports" element={<Reports />} />
           </Routes>
